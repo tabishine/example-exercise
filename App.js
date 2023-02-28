@@ -1,5 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native';
+//import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import { ConfirmButton } from './src/ConfirmButton';
 import {WeightCarousel} from './src/WeightCarousel';
 
 export default function App() {
@@ -7,10 +8,10 @@ export default function App() {
     <View style={styles.container}>
       <Text style = {styles.text}> ТРИСЕТ 
       1/3 НАКЛОНЫ НА ОДНОЙ НОГЕ</Text>
+      <ConfirmButton/>
       <WeightCarousel />
     </View>
   );
-
 
 const styles = StyleSheet.create({
     container: {
@@ -21,6 +22,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
      
     },
+
     text: {
       color: 'white',
       fontSize: 35
