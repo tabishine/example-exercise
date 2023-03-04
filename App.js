@@ -1,8 +1,10 @@
-//import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import {View} from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
 import { ConfirmButton } from './src/ConfirmButton';
 import {WeightCarousel} from './src/WeightCarousel';
-
+import ImageCarouselSquare from './src/ImageCarouselSquare';
 export default function App() {
   return (
     <View style={styles.container}>
@@ -10,6 +12,7 @@ export default function App() {
       1/3 НАКЛОНЫ НА ОДНОЙ НОГЕ</Text>
       <ConfirmButton/>
       <WeightCarousel />
+      <ImageCarouselSquare/>
     </View>
   );
 
